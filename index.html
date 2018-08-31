@@ -1,122 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <title>Pascal Van Acker</title>
-  <meta charset="UTF-8">
-  <head>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-    <style>
-    body, html {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      color: white;
-      font-family: Open Sans;
-      font-weight: 50;
-    }
-    h1 {
-      font-family: Open Sans;
-      font-weight: 200;
-      font-size: 3.7em;
-      margin-bottom: 0.15em;
-      margin-top: 0;
-      text-align: center;
-    }
-    hr.underline {
-      border: 0 0 1px 0;
-      color: rgba(255, 255, 255, 0.4);
-      margin: 0 auto 1.8em auto;
-      width: 100px;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #AAA;
-    }
-    p {
-      color: #DDD;
-      font-size: 1.1em;
-      max-width: 430px;
-    }
-    span.social {
-      font-size: 1.1em;
-      padding: 0 0.4em;
-    }
-    img.avatar {
-      margin-top: 2em;
-    }
-    img.socialicon {
-      height: 1.4em;
-      margin: 0 0.4em;
-      width: 1.4em;
-      vertical-align: -15%;
-    }
-    div.background {
-      background-image: url('images/background.jpg');
-      background-position: center;
-      background-size: cover;
-      min-height: 100%;
-    }
-    div.placeholder {
-      background: rgba(0, 0, 0, 0.4);
-      border-top: rgba(255, 255, 255, 0.7) 1px solid;
-      border-bottom: rgba(255, 255, 255, 0.7) 1px solid;
-      padding: 2em 0;
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      transform: translate(0%,-50%);
-      width: 100%;
-    }
-    div.left, div.right {
-      margin: 0;
-      display: inline-block;
-      padding: 0 1em;
-    }
-    div.right {
-      vertical-align: -200%;
-    }
-    div.social {
-      padding: 0.4em;
-      text-align: center;
-    }
-    </style>
-  </head>
-  <body>
-
-    <div class="background">
-      </div>
-      <div class="placeholder">
-          <div class="left">
-            <img class="avatar" src="images/avatar.png" />
-          </div>
-          <div class="right">
-            <h1>Hi there!</h1>
-            <hr class="underline">
-            <p>Welcome to my little corner of the web.</p>
-            <p>There's not much to see here right now, but this may some day turn into a website. Be sure to check back here at a later time.</>
-            <p>We can connect via the social links below:</p>
-            <div class="social">
-              <span class="social">
-                <a target="_blank" href="https://github.com/pascalva">
-                  <img class="socialicon" src="images/github.png" alt="Github" />Github
-                </a>
-              </span>
-              <span class="social">
-                <a target="_blank" href="https://www.linkedin.com/in/pascal-van-acker/">
-                  <img class="socialicon" src="images/linkedin.png" alt="LinkedIn" />LinkedIn
-                </a>
-              </span>
-              <span class="social">
-                <a target="_blank" href="https://twitter.com/pascalvacker">
-                  <img class="socialicon" src="images/twitter.png" alt="Twitter" />Twitter
-                </a>
-              </span>
-            </div>
-          </div>
-      </div>
-    </div>
-  
-  </body>
+    <title>Pascal Van Acker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+	<div class="background"></div>
+        <div class="placeholder">
+            <h1>Pascal Van Acker</h1>
+            <div class="shadowWithBorder">
+                <img class="avatar" src="images/avatar.png" />
+                <div class="content">
+                    <h2>Hi there!</h2>
+		    <p>Welcome to my little corner of the web!</p>
+		    <p>There's not much to see here right now, but this may some day turn into a website. Be sure to check back here at a later time.<p/>
+                    <p>We can connect via the social links below:</p>
+                    <div class="social">
+                      <a target="_blank" href="https://github.com/pascalva">
+			<img class="socialicon" src="images/github.png" alt="Github" /><span>Github</span>
+                      </a>
+                    </div>
+                    <div class="social">
+                      <a target="_blank" href="https://www.linkedin.com/in/pascal-van-acker/">
+                        <img class="socialicon" src="images/linkedin.png" alt="LinkedIn" /><span>LinkedIn</span>
+                      </a>
+                    </div>
+                    <div class="social">
+                      <a target="_blank" href="https://twitter.com/pascalvacker">
+                        <img class="socialicon" src="images/twitter.png" alt="Twitter" /><span>Twitter</span>
+                      </a>
+                    </div>
+	        </div> <!-- right -->
+	    </div> <!-- shdowWithBorder -->
+        </div> <!-- placeholder --> 
+    
+    </body>
 </html>

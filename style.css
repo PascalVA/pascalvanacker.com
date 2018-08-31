@@ -1,0 +1,118 @@
+* { box-sizing: border-box; }
+
+body,html { height: 100%; box-sizing: border-box; }
+
+body {
+    color: white;
+    font-family: Open Sans;
+    font-weight: 50;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 1.7em;
+}
+
+hr.h2underline {
+    border: 0 0 1px 0;
+    color: rgba(255, 255, 255, 0.2);
+    width: 30%;
+}
+
+a       { color: white; text-decoration: none; }
+a:hover { color: #AAA; }
+p       { color: #DDD; font-size: 1.1em; }
+
+img.avatar {
+    margin-top: 10%;
+    height: 12em;
+    width: 12em;
+}
+
+img.socialicon {
+    height: 2.4em;
+    width: 2.4em;
+    margin: 0 0.8em;
+    vertical-align: -15%;
+}
+
+div.background {
+    position: fixed;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+}
+
+div.placeholder {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-height: 100%;
+    width: 100%;
+}
+
+div.shadowWithBorder {
+    margin-bottom: 10%;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: rgba(255, 255, 255, 0.7) 1px solid;
+    border-bottom: rgba(255, 255, 255, 0.7) 1px solid;
+    padding: 5% 5%;
+    text-align: center;
+    width: 100%;
+}
+
+div.content {
+    padding: 0 5%;
+    text-align: center;
+    vertical-align: 60%;
+    width: 100%;
+}
+
+div.social {
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    white-space: nowrap; 
+}
+
+div.social span {
+    display: none;
+    font-size: 1.1em;
+}
+
+/* For desktops */
+@media only screen and (min-width: 1024px) {
+    h1 {
+        margin-right: 20%;
+    }
+    div.content {
+        display: inline-block;
+        text-align: left;
+        width: 50%;
+    }
+    div.placeholder {
+        top: 10%;
+	min-height: 90%;
+    }
+    div.social {
+	margin: 2%;
+    }
+    div.social span {
+	display: inline-block;
+    }
+    img.socialicon {
+      height: 1.4em;
+      width: 1.4em;
+    }
+    div.shadowWithBorder {
+        margin-bottom: 0;
+    }
+}
