@@ -16,6 +16,10 @@ span {
     vertical-align: bottom;
 }
 
+pre {
+    color: #2ff;
+}
+
 span.ps {
     color: #2f2;
 }
