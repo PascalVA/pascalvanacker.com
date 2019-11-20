@@ -17,8 +17,11 @@ span {
 }
 
 pre {
-    margin: auto;
     font-size: 1.4em;
+}
+
+
+pre.span {
     color: #2ff;
 }
 
