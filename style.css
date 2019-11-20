@@ -73,6 +73,10 @@ a:hover {
         font-size: 1.8vw;
     }
 
+    .tagline {
+        font-size: 1.2vw;
+    }
+
     .console {
       padding: 0 3%;
       font-size: 3.0vw;
