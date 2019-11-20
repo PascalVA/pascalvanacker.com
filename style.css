@@ -3,26 +3,23 @@ body {
     background: #0a0421;
 }
 
-div.console {
-    margin: 5% auto;
-    width: 50%;
-    font-family: 'Roboto Mono';
-    font-size: 1.0em;
-    color: #fff;
-}
-
 span {
     line-height: 1.5em;
     vertical-align: bottom;
 }
 
 pre {
-    font-size: 1.4em;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    color: #2ff;
 }
 
-
-pre.span {
-    color: #2ff;
+pre > span {
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+    line-height: 0em;
 }
 
 span.ps {
@@ -36,4 +33,50 @@ a:link, a:active, a:visited {
 
 a:hover {
     color: #fff;
+}
+
+.gr1{
+    color: #2ff;
+}
+
+.gr2{
+    color: #1ef;
+}
+
+.gr3{
+    color: #0bf;
+}
+
+.gr4{
+    color: #09f;
+}
+
+.header {
+    font-size: 0.9vw;
+}
+
+.tagline {
+    font-size: 1.0vw;
+    text-align: center;
+}
+.console {
+    font-size: 1.2vw;
+    margin: 5% auto;
+    width: 50%;
+    font-family: 'Roboto Mono';
+    color: #fff;
+}
+
+@media (max-width: 978px) {
+    .header {
+        margin-top: 2em;
+        font-size: 1.8vw;
+    }
+
+    .console {
+      padding: 0 3%;
+      font-size: 3.0vw;
+      margin: 0 0 5% 0;
+      width: 94%;
+    }
 }
